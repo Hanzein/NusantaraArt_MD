@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NusArt">
         <activity
+            android:name=".view.editProfile.EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ResultScanActivity"
             android:exported="false" />
         <activity

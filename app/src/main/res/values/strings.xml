@@ -95,9 +95,14 @@
     <string name="genre_lukisan_isi">Ekspresionisme</string>
 
 
-
     <string name="logout_alert">Yakin ingin melakukan Logout?</string>
     <string name="logout_title">Keluar</string>
     <string name="welcome">Welcome to Art Library!</string>
+    <string name="edit_profile_appbar">Edit Profile</string>
+    <string name="edit_profile_username">Edit Profile</string>
+    <string name="edit_profile_nohp">No HP</string>
+    <string name="edit_profile_gender">Gender</string>
+    <string name="edit_profile_address">Address</string>
+    <string name="btn_submit_edit_profile">Submit</string>
 
 </resources>

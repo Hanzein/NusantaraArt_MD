@@ -57,11 +57,11 @@
             tools:src="@tools:sample/backgrounds/scenic" />
 
         <TextView
-            android:id="@+id/item_style"
+            android:id="@+id/item_era"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Style"
+            android:text="Era"
             android:fontFamily="@font/font4_comic"
             android:layout_marginTop="88dp"
             android:scaleType="centerCrop"
@@ -70,6 +70,32 @@
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <TextView
+            android:id="@+id/tv_item_era"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="era"
+            app:layout_constraintTop_toBottomOf="@+id/item_era"
+            android:layout_marginStart="44dp"
+            android:layout_marginHorizontal="16dp"
+            android:transitionName="name"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="Style"
+            android:fontFamily="@font/font4_comic"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="44dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_item_era" />
 
         <TextView
             android:id="@+id/tv_item_style"

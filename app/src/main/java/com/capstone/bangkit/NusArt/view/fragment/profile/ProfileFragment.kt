@@ -17,6 +17,7 @@ import com.capstone.bangkit.NusArt.data.pref.dataStore
 import com.capstone.bangkit.NusArt.databinding.FragmentProfileBinding
 import com.capstone.bangkit.NusArt.preference_manager.LanguageManager
 import com.capstone.bangkit.NusArt.view.ViewModelFactory
+import com.capstone.bangkit.NusArt.view.editProfile.EditProfileActivity
 import com.capstone.bangkit.NusArt.view.fragment.home.HomeViewModel
 import com.capstone.bangkit.NusArt.view.language.LanguageActivity
 import com.capstone.bangkit.NusArt.view.main.MainActivity
@@ -78,6 +79,9 @@ class ProfileFragment : Fragment() {
         }
         binding.btnLanguage.setOnClickListener {
             startActivity(Intent(requireActivity(), LanguageActivity::class.java))
+        }
+        binding.btnLanguage.setOnClickListener {
+            startActivity(Intent(requireActivity(), EditProfileActivity::class.java))
         }
     }
 

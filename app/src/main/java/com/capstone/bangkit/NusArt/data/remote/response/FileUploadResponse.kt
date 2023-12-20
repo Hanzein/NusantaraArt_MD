@@ -9,5 +9,6 @@ data class FileUploadResponse(
 //    val message: String
     val style: String,
     val genre: String,
-    val image: String
+    val image: String,
+    val era: String
 )

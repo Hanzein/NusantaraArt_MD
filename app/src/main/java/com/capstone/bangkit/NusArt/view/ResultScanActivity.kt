@@ -21,12 +21,16 @@ class ResultScanActivity : AppCompatActivity() {
         val genre = intent.getStringExtra(GENRE_KEY)
         val style = intent.getStringExtra(STYLE_KEY)
         val image = intent.getStringExtra(IMAGE_KEY)
+        val era = intent.getStringExtra(ERA_KEY)
+
 
         setupAction()
 
         if (genre != null) {
             binding.tvItemStyle.text = style
             binding.tvItemGenre.text = genre
+            binding.tvItemEra.text = era
+
             Glide.with(binding.root.context)
                 .load(image)
                 .into(binding.image)
@@ -43,5 +47,7 @@ class ResultScanActivity : AppCompatActivity() {
         const val GENRE_KEY = "genre_scan"
         const val IMAGE_KEY = "image_scan"
         const val STYLE_KEY = "style"
+        const val ERA_KEY = "era"
+
     }
 }
