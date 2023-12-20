@@ -83,7 +83,17 @@
 
 
     <string name="judul_lukisan">Nama Lukisan</string>
+    <string name="nama_pelukis">Pelukis</string>
+    <string name="era_lukisan">Era</string>
+    <string name="Deskripsi_lukisan">Deskripsi</string>
     <string name="jenis_lukisan">Jenis Lukisan</string>
+
+    <string name="judul_lukisan_isi">Bebotoh Ayam</string>
+    <string name="nama_pelukis_isi">Affandi</string>
+    <string name="era_lukisan_isi">Modern</string>
+    <string name="Deskripsi_lukisan_isi">Seorang anak lelaki yang sedang membawa seekor ayam jago ditangan kiri dan sangkar ayam yang terjual seharga 4 miliar</string>
+    <string name="jenis_lukisan_isi">Ekspresionisme</string>
+
 
 
     <string name="logout_alert">Yakin ingin melakukan Logout?</string>
