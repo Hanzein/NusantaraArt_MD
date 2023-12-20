@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NusArt</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Buatlah Story Dengan versi kamu di sini!</string>
+    <string name="title_welcome_page">Selamat datang di Aplikasi Story!</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="title_login_page">Sudah siap untuk berkreasi dengan StoryApp mu?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Berkreasi Di Aplikasi Story!</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="invalid_email">Email Tidak sah</string>
+    <string name="invalid_password">Password harus lebih dari 8 huruf!</string>
+    <string name="avatar_user">Avatar Pengguna</string>
+    <string name="description">Deskripsi</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="upload">Unggah</string>
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="this_is_a_picture">Ini adalah Gambar</string>
+    <string name="profile">Profil</string>
+    <string name="success">Sukses</string>
+    <string name="register_successful">Pendaftaran Telah Berhasil</string>
+    <string name="next">Next</string>
+    <string name="permission_request_granted">Permintaan izin dikabulkan</string>
+    <string name="permission_request_denied">Permintaan izin ditolak</string>
+    <string name="no_media_selected">Tidak ada media yang dipilih</string>
+
+    <string name="setting">Setting</string>
+    <string name="title_activity_maps">Maps</string>
+
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+    <string name="retry">Coba lagi</string>
+
+    <string name="hint_search">Mau cari apa maniez?</string>
+
+    <string name="image">image</string>
+    <string name="add_button">add_button</string>
+    <string name="image2">image</string>
+
+    <string name="maps">Peta</string>
+    <string name="add_story">Tambah Cerita</string>
+    <string name="detail">Detail</string>
+    <string name="or">OR</string>
+
+    <string name="signup_msg_bottom">Sudah punya akun?</string>
+    <string name="signup_msg_bottom2">Masuk</string>
+    <string name="login_msg_bottom">Belum punya akun?</string>
+    <string name="login_msg_bottom2">Daftar</string>
+
+    <string name="home_navtext">Home</string>
+    <string name="camera_navtext">Camera</string>
+    <string name="Map_navtext">Map</string>
+    <string name="Profile_navtext">Profile</string>
+
+    <string name="profile_appbar">Profil saya</string>
+    <string name="tv_profile">User</string>
+    <string name="logout_app">Keluar Aplikasi</string>
+    <string name="iv1_content_desc_profile">Foto Profil User</string>
+    <string name="btn1_content_desc_profile">Mengganti Bahasa</string>
+    <string name="btn2_content_desc_profile">keluar Aplikasi</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="languange_settings">Ganti Bahasa</string>
+    <string name="editprofile_settings">Edit Profile</string>
+    <string name="btn_zoomin_map">+</string>
+    <string name="btn_zoomout_map">-</string>
+    <string name="btnback_map">Kembali</string>
+
+    <string name="tv_indonesia_language">Indonesia</string>
+    <string name="iv1_content_desc_language">Kembali ke profile</string>
+    <string name="btn1_content_desc_language">Ganti Bahasa Indonesia</string>
+
+
+    <string name="language_title_dialog">tes 1</string>
+    <string name="language_option_dialog">tes 2</string>
+    <string name="txt_ok">Ok</string>
+    <string name="txt_Cancel">Cancel</string>
+
+    <string name="judul_lukisan">Nama Lukisan</string>
+    <string name="jenis_lukisan">Jenis Lukisan</string>
+
+    <string name="logout_alert">Yakin ingin melakukan Logout?</string>
+    <string name="logout_title">Keluar</string>
+
+
+
+</resources>
