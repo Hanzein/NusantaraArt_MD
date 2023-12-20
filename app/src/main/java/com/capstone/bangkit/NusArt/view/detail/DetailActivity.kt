@@ -2,9 +2,8 @@ package com.capstone.bangkit.NusArt.view.detail
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import com.bumptech.glide.Glide
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.capstone.bangkit.NusArt.adapter.StoryAdapter
 import com.capstone.bangkit.NusArt.databinding.ActivityDetailBinding
 import com.capstone.bangkit.NusArt.view.main.MainActivity
@@ -22,6 +21,8 @@ class DetailActivity : AppCompatActivity() {
         val photoUrl = intent.getStringExtra(StoryAdapter.IMAGE_KEY)
         val genre = intent.getStringExtra(StoryAdapter.GENRE_KEY)
         val desc = intent.getStringExtra(StoryAdapter.DESC_KEY)
+        val artist = intent.getStringExtra(StoryAdapter.ARTIST_KEY)
+        val era = intent.getStringExtra(StoryAdapter.ERA_KEY)
 
 
         setupAction()
@@ -29,6 +30,8 @@ class DetailActivity : AppCompatActivity() {
         if (user != null) {
             binding.tvItemName.text = user
             binding.tvItemDescription.text = desc
+            binding.tvItemArtist.text = artist
+            binding.tvItemEra.text = era
             binding.tvItemGenre.text = genre
             Glide.with(binding.root.context)
                 .load(photoUrl)

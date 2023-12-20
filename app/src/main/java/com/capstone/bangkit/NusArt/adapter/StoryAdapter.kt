@@ -32,7 +32,7 @@ class StoryAdapter : PagingDataAdapter<ListArtItem, StoryAdapter.MyViewHolder>(D
         RecyclerView.ViewHolder(binding.root) {
         fun bind(user: ListArtItem){
             binding.tvItemName.text = user.title
-            binding.tvItemDescription.text = user.genre
+            binding.tvItemGenre.text = user.genre
             Glide.with(binding.root.context)
                 .load(user.image)
                 .into(binding.image)
@@ -48,6 +48,9 @@ class StoryAdapter : PagingDataAdapter<ListArtItem, StoryAdapter.MyViewHolder>(D
             intentDetail.putExtra(IMAGE_KEY, user.image)
             intentDetail.putExtra(GENRE_KEY, user.genre)
             intentDetail.putExtra(DESC_KEY, user.description)
+            intentDetail.putExtra(ARTIST_KEY, user.artist)
+            intentDetail.putExtra(ERA_KEY, user.era)
+
 
 
 //            val optionsCompat: ActivityOptionsCompat =
