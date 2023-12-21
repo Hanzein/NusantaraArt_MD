@@ -2,24 +2,30 @@ package com.capstone.bangkit.NusArt.view.login
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.capstone.bangkit.NusArt.R
 import com.capstone.bangkit.NusArt.data.ResultState
 import com.capstone.bangkit.NusArt.data.pref.UserModel
 import com.capstone.bangkit.NusArt.databinding.ActivityLoginBinding
+import com.capstone.bangkit.NusArt.preference_manager.LanguageManager
 import com.capstone.bangkit.NusArt.view.ViewModelFactory
 import com.capstone.bangkit.NusArt.view.main.MainActivity
 import com.capstone.bangkit.NusArt.view.signup.SignupActivity
 import com.capstone.bangkit.NusArt.view.welcome.WelcomeActivity
 import kotlinx.coroutines.launch
+import java.util.Locale
 
 class LoginActivity : AppCompatActivity() {
     private val viewModel by viewModels<LoginViewModel> {
@@ -35,6 +41,8 @@ class LoginActivity : AppCompatActivity() {
         setupView()
         setupAction()
         playAnimation()
+        SetLanguage()
+        setupKeyboardClosing()
     }
 
     private fun setupView() {
@@ -90,12 +98,22 @@ class LoginActivity : AppCompatActivity() {
                         is ResultState.Error -> {
                             showToast(result.error)
                             showLoading(false)
+                            showErrorDialog()
                         }
                     }
                 }
             }
         }
     }
+
+    private fun SetLanguage() {
+        val language = LanguageManager.getLanguage(this)
+
+        val config = resources.configuration
+        config.setLocale(Locale(language))
+        resources.updateConfiguration(config, resources.displayMetrics)
+    }
+
 
     private fun showLoading(isLoading: Boolean) {
         binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
@@ -136,6 +154,30 @@ class LoginActivity : AppCompatActivity() {
             )
             startDelay = 1000
         }.start()
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    private fun setupKeyboardClosing() {
+        val rootLayout = findViewById<View>(android.R.id.content)
+        rootLayout.setOnTouchListener { _, _ ->
+            currentFocus?.let { focusedView ->
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as? InputMethodManager
+                imm?.hideSoftInputFromWindow(focusedView.windowToken, 0)
+                focusedView.clearFocus()
+            }
+            false
+        }
+    }
+
+
+    private fun showErrorDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(R.string.login_tit_dialogerr)
+        builder.setMessage(R.string.login_con_dialogerr)
+        builder.setPositiveButton("OK") { _, _ ->
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
 }

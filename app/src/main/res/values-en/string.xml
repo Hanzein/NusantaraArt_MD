@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">NusArt</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="message_welcome_page">Lets discover Indonesian paintings with us!</string>
+    <string name="title_welcome_page">Welcome to NusArt</string>
+    <string name="title_signup_page">Create New Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Login now to continue</string>
+    <string name="message_signup_page">Sign Up to get Started</string>
+    <string name="title_login_page">Are you ready to get creative with NusArt?</string>
+    <string name="name">Name</string>
+    <string name="message_main_page">Have fun creating on StoryApp!</string>
+    <string name="greeting">Hello %1$s,</string>
+    <string name="logout">Logout</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_password">Password must be more than 8 letters!</string>
+    <string name="avatar_user">User Avatar</string>
+    <string name="description">Description</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="empty_image_warning">Please insert the image file first.</string>
+    <string name="this_is_a_picture">This is a picture</string>
+    <string name="profile">Profile</string>
+    <string name="success">Success</string>
+    <string name="register_successful">Registration has been successful</string>
+    <string name="next">Next</string>
+    <string name="permission_request_granted">Permission request granted</string>
+    <string name="permission_request_denied">Permission request denied</string>
+    <string name="no_media_selected">No media selected</string>
+    <string name="setting">Settings</string>
+    <string name="title_activity_maps">Maps</string>
+
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+    <string name="retry">Retry</string>
+
+    <string name="hint_search">What are you looking for?</string>
+
+    <string name="image">image!</string>
+    <string name="add_button">add button</string>
+    <string name="image2">image2</string>
+    <string name="maps">Maps</string>
+    <string name="add_story">Add Story</string>
+    <string name="detail">Detail</string>
+    <string name="or">OR</string>
+
+    <string name="signup_msg_bottom">Already have an account?</string>
+    <string name="signup_msg_bottom2">Login</string>
+    <string name="login_msg_bottom">Dont have an account?</string>
+    <string name="login_msg_bottom2">Sign Up</string>
+
+    <string name="home_navtext">Home</string>
+    <string name="camera_navtext">Camera</string>
+    <string name="Map_navtext">Map</string>
+    <string name="Profile_navtext">Profile</string>
+
+    <string name="profile_appbar">My Profile</string>
+    <string name="tv_profile">User</string>
+    <string name="logout_app">Exit Application</string>
+    <string name="iv1_content_desc_profile">User Profile Photo</string>
+    <string name="btn1_content_desc_profile">Change Language</string>
+    <string name="btn2_content_desc_profile">Exit Application</string>
+    <string name="change_language">Change Language</string>
+    <string name="languange_settings">Change Language</string>
+    <string name="editprofile_settings">Edit Profile</string>
+    <string name="btn_zoomin_map">+</string>
+    <string name="btn_zoomout_map">-</string>
+    <string name="btnback_map">Back</string>
+
+    <string name="iv1_content_desc_language">Back to Profile</string>
+    <string name="btn1_content_desc_language">Change to Indonesian</string>
+    <string name="btn2_content_desc_language">Change to English</string>
+    <string name="btn3_content_desc_language">Change to Japanese</string>
+    <string name="btn4_content_desc_language">Change to Malaysia</string>
+
+    <string name="tv_indonesia_language">Indonesia</string>
+    <string name="tv_english_language">English</string>
+    <string name="tv_japan_language">Japan</string>
+    <string name="tv_malaysia_language">Malaysia</string>
+
+    <string name="language_title_dialog">Change Language</string>
+    <string name="language_option_dialog">Are you sure?</string>
+    <string name="txt_ok">Ok</string>
+    <string name="txt_Cancel">Cancel</string>
+
+    <string name="login_tit_dialog">Successful Login</string>
+    <string name="login_con_dialog">Welcome to our application :)</string>
+
+    <string name="login_tit_dialogerr">Login Failed</string>
+    <string name="login_con_dialogerr">Please check your Email and Password again!</string>
+
+
+    <string name="judul_lukisan">Painting Name</string>
+    <string name="nama_pelukis">Creator</string>
+    <string name="era_lukisan">Era</string>
+    <string name="genre_lukisan">Genre</string>
+    <string name="Deskripsi_lukisan">Description</string>
+
+    <string name="judul_lukisan_isi">Bebotoh Ayam</string>
+    <string name="nama_pelukis_isi">Affandi</string>
+    <string name="era_lukisan_isi">Modern</string>
+    <string name="genre_lukisan_isi">Expressionism</string>
+    <string name="Deskripsi_lukisan_isi">A boy carrying a rooster in his left hand and a rooster cage sold for 4 billion</string>
+
+    <string name="logout_alert">Are you sure you want to logout?</string>
+    <string name="logout_title">Logout</string>
+    <string name="welcome">Welcome to Art Library!</string>
+    <string name="edit_profile_appbar">Edit Profile</string>
+    <string name="edit_profile_username">Edit Profile</string>
+    <string name="edit_profile_nohp">Phone Number</string>
+    <string name="edit_profile_gender">Gender</string>
+    <string name="edit_profile_address">Address</string>
+    <string name="btn_submit_edit_profile">Submit</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    <string name="resultscan_title">Result Scan</string>
+
+</resources>

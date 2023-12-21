@@ -10,8 +10,10 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.capstone.bangkit.NusArt.databinding.ActivityWelcomeBinding
+import com.capstone.bangkit.NusArt.preference_manager.LanguageManager
 import com.capstone.bangkit.NusArt.view.login.LoginActivity
 import com.capstone.bangkit.NusArt.view.signup.SignupActivity
+import java.util.Locale
 
 class WelcomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWelcomeBinding
@@ -24,6 +26,15 @@ class WelcomeActivity : AppCompatActivity() {
         setupView()
         setupAction()
         playAnimation()
+        setupLanguage()
+    }
+
+    private fun setupLanguage() {
+        val language = LanguageManager.getLanguage(this)
+
+        val config = resources.configuration
+        config.setLocale(Locale(language))
+        resources.updateConfiguration(config, resources.displayMetrics)
     }
 
     private fun setupView() {
