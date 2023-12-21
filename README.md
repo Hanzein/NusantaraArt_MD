@@ -6,6 +6,7 @@ What is this repository about?
 As the name implies, this repository is used as a workplace for Mobile Development roles in the Capstone Project as part of Bangkit 2023 Batch 2 Product Based Capstone Project Build in Native Android with Kotlin using Android Studio. 
 
 ## This Application built with 
+
 A. UI/UX and Design 
 -
 -
