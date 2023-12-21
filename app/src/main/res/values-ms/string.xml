@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NusArt</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Log masuk</string>
+    <string name="message_welcome_page">Mari kita teroka lukisan Indonesia bersama-sama!</string>
+    <string name="title_welcome_page">Selamat datang ke NusArt</string>
+    <string name="title_signup_page">Cipta Akaun Baru</string>
+    <string name="email">E-mel</string>
+    <string name="password">Kata Laluan</string>
+    <string name="message_login_page">Log masuk sekarang untuk teruskan</string>
+    <string name="message_signup_page">Daftar untuk mula</string>
+    <string name="title_login_page">Adakah anda bersedia untuk menjadi kreatif dengan NusArt?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Bersenang-senanglah mencipta di StoryApp!</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Log Keluar</string>
+    <string name="invalid_email">E-mel Tidak Sah</string>
+    <string name="invalid_password">Kata Laluan mesti melebihi 8 huruf!</string>
+    <string name="avatar_user">Avatar Pengguna</string>
+    <string name="description">Penerangan</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="upload">Muat naik</string>
+    <string name="empty_image_warning">Sila masukkan fail imej dahulu.</string>
+    <string name="this_is_a_picture">Ini adalah gambar</string>
+    <string name="profile">Profil</string>
+    <string name="success">Berjaya</string>
+    <string name="register_successful">Pendaftaran berjaya</string>
+    <string name="next">Seterusnya</string>
+    <string name="permission_request_granted">Permintaan kebenaran diluluskan</string>
+    <string name="permission_request_denied">Permintaan kebenaran ditolak</string>
+    <string name="no_media_selected">Tiada media dipilih</string>
+    <string name="setting">Tetapan</string>
+    <string name="title_activity_maps">Peta</string>
+
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satelit</string>
+    <string name="terrain_type">Landskap</string>
+    <string name="hybrid_type">Hibrid</string>
+    <string name="retry">Cuba semula</string>
+
+    <string name="hint_search">Apa yang anda cari?</string>
+
+    <string name="image">imej!</string>
+    <string name="add_button">tombol tambah</string>
+    <string name="image2">imej2</string>
+    <string name="maps">Peta</string>
+    <string name="add_story">Tambah Cerita</string>
+    <string name="detail">Terperinci</string>
+    <string name="or">ATAU</string>
+
+    <string name="signup_msg_bottom">Sudah memiliki akaun?</string>
+    <string name="signup_msg_bottom2">Log masuk</string>
+    <string name="login_msg_bottom">Belum mempunyai akaun?</string>
+    <string name="login_msg_bottom2">Daftar</string>
+
+    <string name="home_navtext">Laman Utama</string>
+    <string name="camera_navtext">Kamera</string>
+    <string name="Map_navtext">Peta</string>
+    <string name="Profile_navtext">Profil</string>
+
+    <string name="profile_appbar">Profil Saya</string>
+    <string name="tv_profile">Pengguna</string>
+    <string name="logout_app">Keluar Aplikasi</string>
+    <string name="iv1_content_desc_profile">Foto Profil Pengguna</string>
+    <string name="btn1_content_desc_profile">Tukar Bahasa</string>
+    <string name="btn2_content_desc_profile">Keluar Aplikasi</string>
+    <string name="change_language">Tukar Bahasa</string>
+    <string name="languange_settings">Tukar Bahasa</string>
+    <string name="editprofile_settings">Edit Profil</string>
+    <string name="btn_zoomin_map">+</string>
+    <string name="btn_zoomout_map">-</string>
+    <string name="btnback_map">Kembali</string>
+
+    <string name="iv1_content_desc_language">Kembali ke Profil</string>
+    <string name="btn1_content_desc_language">Tukar ke Bahasa Indonesia</string>
+    <string name="btn2_content_desc_language">Tukar ke Bahasa Inggeris</string>
+    <string name="btn3_content_desc_language">Tukar ke Bahasa Jepun</string>
+    <string name="btn4_content_desc_language">Tukar ke Bahasa Malaysia</string>
+
+    <string name="tv_indonesia_language">Indonesia</string>
+    <string name="tv_english_language">Inggeris</string>
+    <string name="tv_japan_language">Jepun</string>
+    <string name="tv_malaysia_language">Malaysia</string>
+
+    <string name="language_title_dialog">Ganti Bahase</string>
+    <string name="language_option_dialog">Yakin ke nak ganti</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_Cancel">Batal</string>
+
+    <string name="login_tit_dialog">Log Masuk Berjaya</string>
+    <string name="login_con_dialog">Selamat datang ke aplikasi kami :)</string>
+
+    <string name="login_tit_dialogerr">Log Masuk Gagal</string>
+    <string name="login_con_dialogerr">Sila periksa semula Emel &amp; Kata Laluan anda!</string>
+
+
+    <string name="judul_lukisan">Nama Lukisan</string>
+    <string name="nama_pelukis">Pencipta</string>
+    <string name="era_lukisan">Era</string>
+    <string name="genre_lukisan">Genre</string>
+    <string name="Deskripsi_lukisan">Penerangan</string>
+
+    <string name="judul_lukisan_isi">Bebotoh Ayam</string>
+    <string name="nama_pelukis_isi">Affandi</string>
+    <string name="era_lukisan_isi">Moden</string>
+    <string name="genre_lukisan_isi">Ekspresionisme</string>
+    <string name="Deskripsi_lukisan_isi">Seorang budak lelaki yang membawa ayam jago di tangan kiri dan sangkar ayam yang dijual seharga 4 bilion</string>
+
+    <string name="logout_alert">Adakah anda pasti ingin log keluar?</string>
+    <string name="logout_title">Log Keluar</string>
+    <string name="welcome">Selamat datang ke Art Library!</string>
+    <string name="edit_profile_appbar">Edit Profil</string>
+    <string name="edit_profile_username">Edit Profil</string>
+    <string name="edit_profile_nohp">Nombor Telefon</string>
+    <string name="edit_profile_gender">Jantina</string>
+    <string name="edit_profile_address">Alamat</string>
+    <string name="btn_submit_edit_profile">Hantar</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    <string name="resultscan_title">Hasil Scan</string>
+</resources>

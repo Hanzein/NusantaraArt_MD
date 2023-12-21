@@ -54,8 +54,8 @@ class HomeFragment : Fragment() {
         }
 
        // setupView()
-        //setupProperty()
-        //setupLanguage()
+        setupProperty()
+        setupLanguage()
 
 
         addButton.setOnClickListener {

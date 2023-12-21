@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NusArt</string>
+    <string name="signup">サインアップ</string>
+    <string name="login">ログイン</string>
+    <string name="message_welcome_page">一緒にインドネシアの絵画を見つけましょう！</string>
+    <string name="title_welcome_page">NusArtへようこそ</string>
+    <string name="title_signup_page">新しいアカウントを作成</string>
+    <string name="email">メール</string>
+    <string name="password">パスワード</string>
+    <string name="message_login_page">続行するには今すぐログイン</string>
+    <string name="message_signup_page">始めるにはサインアップ</string>
+    <string name="title_login_page">NusArtでクリエイティブになる準備はできていますか？</string>
+    <string name="name">名前</string>
+    <string name="message_main_page">StoryAppで創造的な時間を楽しんでください！</string>
+    <string name="greeting">こんにちは、%1$sさん</string>
+    <string name="logout">ログアウト</string>
+    <string name="invalid_email">無効なメール</string>
+    <string name="invalid_password">パスワードは8文字以上でなければなりません！</string>
+    <string name="avatar_user">ユーザーアバター</string>
+    <string name="description">説明</string>
+    <string name="camera">カメラ</string>
+    <string name="gallery">ギャラリー</string>
+    <string name="upload">アップロード</string>
+    <string name="empty_image_warning">最初に画像ファイルを挿入してください。</string>
+    <string name="this_is_a_picture">これは写真です</string>
+    <string name="profile">プロフィール</string>
+    <string name="success">成功</string>
+    <string name="register_successful">登録が成功しました</string>
+    <string name="next">次へ</string>
+    <string name="permission_request_granted">許可リクエストが許可されました</string>
+    <string name="permission_request_denied">許可リクエストが拒否されました</string>
+    <string name="no_media_selected">メディアが選択されていません</string>
+    <string name="setting">設定</string>
+    <string name="title_activity_maps">マップ</string>
+
+    <string name="normal_type">通常</string>
+    <string name="satellite_type">衛星</string>
+    <string name="terrain_type">地形</string>
+    <string name="hybrid_type">ハイブリッド</string>
+    <string name="retry">リトライ</string>
+
+    <string name="hint_search">何をお探しですか？</string>
+
+    <string name="image">画像！</string>
+    <string name="add_button">追加ボタン</string>
+    <string name="image2">画像2</string>
+    <string name="maps">マップ</string>
+    <string name="add_story">ストーリーを追加</string>
+    <string name="detail">詳細</string>
+    <string name="or">または</string>
+
+    <string name="signup_msg_bottom">すでにアカウントをお持ちですか？</string>
+    <string name="signup_msg_bottom2">ログイン</string>
+    <string name="login_msg_bottom">アカウントがありませんか？</string>
+    <string name="login_msg_bottom2">サインアップ</string>
+
+    <string name="home_navtext">ホーム</string>
+    <string name="camera_navtext">カメラ</string>
+    <string name="Map_navtext">マップ</string>
+    <string name="Profile_navtext">プロフィール</string>
+
+    <string name="profile_appbar">私のプロフィール</string>
+    <string name="tv_profile">ユーザー</string>
+    <string name="logout_app">アプリケーションを終了</string>
+    <string name="iv1_content_desc_profile">ユーザープロフィール写真</string>
+    <string name="btn1_content_desc_profile">言語を変更</string>
+    <string name="btn2_content_desc_profile">アプリケーションを終了</string>
+    <string name="change_language">言語を変更</string>
+    <string name="languange_settings">言語を変更</string>
+    <string name="editprofile_settings">プロフィールを編集</string>
+    <string name="btn_zoomin_map">+</string>
+    <string name="btn_zoomout_map">-</string>
+    <string name="btnback_map">戻る</string>
+
+    <string name="iv1_content_desc_language">プロフィールに戻る</string>
+    <string name="btn1_content_desc_language">インドネシア語に変更</string>
+    <string name="btn2_content_desc_language">英語に変更</string>
+    <string name="btn3_content_desc_language">日本語に変更</string>
+    <string name="btn4_content_desc_language">マレーシア語に変更</string>
+
+    <string name="tv_indonesia_language">インドネシア</string>
+    <string name="tv_english_language">英語</string>
+    <string name="tv_japan_language">日本語</string>
+    <string name="tv_malaysia_language">マレーシア語</string>
+
+    <string name="language_title_dialog">言語の変更</string>
+    <string name="language_option_dialog">言語を変更しますか？</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_Cancel">キャンセル</string>
+
+    <string name="login_tit_dialog">ログイン成功</string>
+    <string name="login_con_dialog">アプリケーションをご利用いただきありがとうございます :)</string>
+
+    <string name="login_tit_dialogerr">ログイン失敗</string>
+    <string name="login_con_dialogerr">もう一度メールアドレスとパスワードを確認してください。</string>
+
+
+    <string name="judul_lukisan">絵の名前</string>
+    <string name="nama_pelukis">作者</string>
+    <string name="era_lukisan">時代</string>
+    <string name="genre_lukisan">ジャンル</string>
+    <string name="Deskripsi_lukisan">説明</string>
+
+    <string name="judul_lukisan_isi">Bebotoh Ayam</string>
+    <string name="nama_pelukis_isi">アファンディ</string>
+    <string name="era_lukisan_isi">モダン</string>
+    <string name="genre_lukisan_isi">表現主義</string>
+    <string name="Deskripsi_lukisan_isi">左手にニワトリを抱え、ケージに入れた少年が40億で売られる</string>
+
+    <string name="logout_alert">本当にログアウトしますか？</string>
+    <string name="logout_title">ログアウト</string>
+    <string name="welcome">アートライブラリへようこそ！</string>
+    <string name="edit_profile_appbar">プロフィールを編集</string>
+    <string name="edit_profile_username">プロフィールを編集</string>
+    <string name="edit_profile_nohp">電話番号</string>
+    <string name="edit_profile_gender">性別</string>
+    <string name="edit_profile_address">住所</string>
+    <string name="btn_submit_edit_profile">提出</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    <string name="resultscan_title">スキャン結果</string>
+
+
+</resources>

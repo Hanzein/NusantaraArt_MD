@@ -60,6 +60,9 @@ class LanguageActivity : AppCompatActivity(){
             }
             binding.apply {
                 btnIndonesia.setOnClickListener { showDialog("in") }
+                btnUnitedstates.setOnClickListener { showDialog("en") }
+                btnMalaysia.setOnClickListener { showDialog("ms") }
+                btnJepang.setOnClickListener { showDialog("ja") }
             }
         }
 

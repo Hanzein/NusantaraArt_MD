@@ -2,12 +2,14 @@ package com.capstone.bangkit.NusArt.view.signup
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
@@ -15,9 +17,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.capstone.bangkit.NusArt.R
 import com.capstone.bangkit.NusArt.data.ResultState
 import com.capstone.bangkit.NusArt.databinding.ActivitySignupBinding
+import com.capstone.bangkit.NusArt.preference_manager.LanguageManager
 import com.capstone.bangkit.NusArt.view.ViewModelFactory
 import com.capstone.bangkit.NusArt.view.login.LoginActivity
 import com.capstone.bangkit.NusArt.view.welcome.WelcomeActivity
+import java.util.Locale
 
 class SignupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignupBinding
@@ -34,7 +38,18 @@ class SignupActivity : AppCompatActivity() {
         setupView()
         setupAction()
         playAnimation()
+        setupLanguage()
+        setupKeyboardClosing()
     }
+
+    private fun setupLanguage() {
+        val language = LanguageManager.getLanguage(this)
+
+        val config = resources.configuration
+        config.setLocale(Locale(language))
+        resources.updateConfiguration(config, resources.displayMetrics)
+    }
+
 
     private fun setupView() {
         @Suppress("DEPRECATION")
@@ -139,5 +154,18 @@ class SignupActivity : AppCompatActivity() {
             startDelay = 1000
         }.start()
 
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
+    private fun setupKeyboardClosing() {
+        val rootLayout = findViewById<View>(android.R.id.content)
+        rootLayout.setOnTouchListener { _, _ ->
+            currentFocus?.let { focusedView ->
+                val imm = getSystemService(INPUT_METHOD_SERVICE) as? InputMethodManager
+                imm?.hideSoftInputFromWindow(focusedView.windowToken, 0)
+                focusedView.clearFocus()
+            }
+            false
+        }
     }
 }
