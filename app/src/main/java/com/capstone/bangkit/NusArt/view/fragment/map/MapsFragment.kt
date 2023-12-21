@@ -12,6 +12,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
@@ -67,7 +69,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             requestNotificationPermissionLauncher.launch(android.Manifest.permission.POST_NOTIFICATIONS)
         }
 
-        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        val mapFragment = childFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
 
@@ -87,7 +89,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                 .strokeColor(Color.RED)
                 .strokeWidth(3f)
         )
-
+        configureMap()
         getMyLocation()
         addGeofence()
     }
@@ -171,6 +173,28 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             requireContext(),
             permission
         ) == PackageManager.PERMISSION_GRANTED
+    }
+
+
+
+    private fun configureMap() {
+        mMap.uiSettings.isZoomControlsEnabled = false
+
+        // Find your buttons in the binding
+        val btnZoomIn = binding.root.findViewById<Button>(R.id.btnZoomIn)
+        val btnZoomOut = binding.root.findViewById<Button>(R.id.btnZoomOut)
+        // Set click listeners for zoom in and zoom out
+        btnZoomIn.setOnClickListener { zoomIn() }
+        btnZoomOut.setOnClickListener { zoomOut() }
+
+    }
+
+    private fun zoomIn() {
+        mMap.animateCamera(CameraUpdateFactory.zoomIn())
+    }
+
+    private fun zoomOut() {
+        mMap.animateCamera(CameraUpdateFactory.zoomOut())
     }
 
     @TargetApi(Build.VERSION_CODES.Q)

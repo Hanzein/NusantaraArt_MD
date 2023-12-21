@@ -6,11 +6,12 @@
     <string name="login">Masuk</string>
     <string name="message_welcome_page">Buatlah Story Dengan versi kamu di sini!</string>
     <string name="title_welcome_page">Selamat datang di Aplikasi Story!</string>
-    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="title_signup_page">Buat akun baru</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="message_login_page">Masukkan dulu datamu ya</string>
-    <string name="title_login_page">Sudah siap untuk berkreasi dengan StoryApp mu?</string>
+    <string name="message_login_page">Login dulu ya untuk melanjutkan</string>
+    <string name="message_signup_page">Sign Up untuk memulai</string>
+    <string name="title_login_page">Sudah siap untuk berkreasi dengan NusArt?</string>
     <string name="name">Nama</string>
     <string name="message_main_page">Selamat Berkreasi Di Aplikasi Story!</string>
     <string name="greeting">Halo %1$s,</string>
@@ -101,6 +102,17 @@
     <string name="logout_title">Keluar</string>
 
     <string name="welcome">Selamat Datang Di Perpustakaan Seni!</string>
+
+    <string name="edit_profile_appbar">Edit Profile</string>
+    <string name="edit_profile_username">Edit Profile</string>
+    <string name="edit_profile_nohp">No HP</string>
+    <string name="edit_profile_gender">Gender</string>
+    <string name="edit_profile_address">Address</string>
+    <string name="btn_submit_edit_profile">Submit</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
 
 
 

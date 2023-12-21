@@ -4,11 +4,12 @@
     <string name="login">Login</string>
     <string name="message_welcome_page">Lets discover Indonesian paintings with us!</string>
     <string name="title_welcome_page">Welcome to NusArt</string>
-    <string name="title_signup_page">Input Your Biodata okey</string>
+    <string name="title_signup_page">Create New Account</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="message_login_page">Enter your data first</string>
-    <string name="title_login_page">Are you ready to get creative with your StoryApp?</string>
+    <string name="message_login_page">Login now to continue</string>
+    <string name="message_signup_page">Sign Up to get Started</string>
+    <string name="title_login_page">Are you ready to get creative with NusArt?</string>
     <string name="name">Name</string>
     <string name="message_main_page">Have fun creating on StoryApp!</string>
     <string name="greeting">Halo %1$s,</string>
@@ -104,5 +105,8 @@
     <string name="edit_profile_gender">Gender</string>
     <string name="edit_profile_address">Address</string>
     <string name="btn_submit_edit_profile">Submit</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
 
 </resources>
