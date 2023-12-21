@@ -15,7 +15,6 @@ A. UI/UX and Design
 B. Image Processing 
 - Retrofit
 - Camera X
--
 
 C. Library 
 - Fragment
