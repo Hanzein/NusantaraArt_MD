@@ -175,6 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
             android:paddingBottom="22dp"
+            android:paddingEnd="20dp"
             android:text="@string/description"
             android:textSize="15sp"
             android:transitionName="@string/Deskripsi_lukisan_isi"
