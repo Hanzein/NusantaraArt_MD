@@ -47,7 +47,7 @@
                     android:fontFamily="@font/font3_poppins_semibold"
                     android:text="@string/profile_appbar"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
             </com.google.android.material.appbar.MaterialToolbar>
