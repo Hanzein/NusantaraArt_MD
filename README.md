@@ -9,17 +9,17 @@ As the name implies, this repository is used as a workplace for Mobile Developme
 
 A. UI/UX and Design 
 - Material
--
--
+- OkHttp3
+- Glide
 
 B. Image Processing 
 - Retrofit
-- 
+- Camera X
 -
 
 C. Library 
 - Fragment
-- 
+- Google Maps Services
 
 ## Features : 
 Here are some feature that i implement on NusArt application : 
