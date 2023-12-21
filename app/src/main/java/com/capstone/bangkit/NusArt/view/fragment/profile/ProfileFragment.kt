@@ -80,7 +80,7 @@ class ProfileFragment : Fragment() {
         binding.btnLanguage.setOnClickListener {
             startActivity(Intent(requireActivity(), LanguageActivity::class.java))
         }
-        binding.btnLanguage.setOnClickListener {
+        binding.btnEditprofile.setOnClickListener {
             startActivity(Intent(requireActivity(), EditProfileActivity::class.java))
         }
     }
