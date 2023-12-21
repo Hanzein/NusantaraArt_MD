@@ -26,7 +26,7 @@ class ResultScanActivity : AppCompatActivity() {
         setupAction()
 
         if (genre != null) {
-            binding.tvEra.text = era
+            binding.tvItemEra.text = era
             binding.tvItemStyle.text = style
             binding.tvItemGenre.text = genre
             Glide.with(binding.root.context)
