@@ -1,11 +1,11 @@
-## NusArt (Nusantara Art) - Mobile Development Repository 
+# NusArt (Nusantara Art) - Mobile Development Repository 
 
 Hello everyone, welcome in this Mobile Development repository for NusArt Capstone Project. 
 
 What is this repository about?
 As the name implies, this repository is used as a workplace for Mobile Development roles in the Capstone Project as part of Bangkit 2023 Batch 2 Product Based Capstone Project Build in Native Android with Kotlin using Android Studio. 
 
-# This Application built with 
+## This Application built with 
 A. UI/UX and Design 
 -
 -
@@ -20,7 +20,7 @@ C. Library
 - Fragment
 - 
 
-# Features : 
+## Features : 
 Here are some feature that i implement on NusArt application : 
 - ArtLibrary : This library lists data on paintings in Indonesia from the pre-independence era to the digital and technological era. It also displays paintings from various painting styles and from various Indonesian painters as well as the meaning of the paintings. This feature has been integrated with the API, so we call the list of data in the Cloud. 
 - ArtExpo Tracker : This feature is a feature that will detect the user when approaching a museum area that is holding an art exhibition, when the user enters the area where the exhibition is then the user will get a notification (for this feature the user is required to activate location services and allow notifications on his device. 
