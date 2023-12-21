@@ -4,8 +4,8 @@
     <string name="app_name">NusArt</string>
     <string name="signup">Daftar</string>
     <string name="login">Masuk</string>
-    <string name="message_welcome_page">Buatlah Story Dengan versi kamu di sini!</string>
-    <string name="title_welcome_page">Selamat datang di Aplikasi Story!</string>
+    <string name="message_welcome_page">Temukan lukisan Indonesia bersama kami</string>
+    <string name="title_welcome_page">Selamat datang di NusArt</string>
     <string name="title_signup_page">Buat akun baru</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -13,7 +13,7 @@
     <string name="message_signup_page">Sign Up untuk memulai</string>
     <string name="title_login_page">Sudah siap untuk berkreasi dengan NusArt?</string>
     <string name="name">Nama</string>
-    <string name="message_main_page">Selamat Berkreasi Di Aplikasi Story!</string>
+    <string name="message_main_page">Selamat Berkreasi Di NusArt!</string>
     <string name="greeting">Halo %1$s,</string>
     <string name="logout">Keluar</string>
     <string name="invalid_email">Email Tidak sah</string>
@@ -76,15 +76,28 @@
     <string name="btn_zoomout_map">-</string>
     <string name="btnback_map">Kembali</string>
 
+    <string name="iv1_content_desc_language">Back to Profile</string>
+    <string name="btn1_content_desc_language">Change to Indonesian</string>
+    <string name="btn2_content_desc_language">Change to English</string>
+    <string name="btn3_content_desc_language">Change to Japanese</string>
+    <string name="btn4_content_desc_language">Change to Malaysia</string>
+
     <string name="tv_indonesia_language">Indonesia</string>
-    <string name="iv1_content_desc_language">Kembali ke profile</string>
-    <string name="btn1_content_desc_language">Ganti Bahasa Indonesia</string>
+    <string name="tv_english_language">Inggris</string>
+    <string name="tv_japan_language">Japan</string>
+    <string name="tv_malaysia_language">Malaysia</string>
 
 
-    <string name="language_title_dialog">tes 1</string>
-    <string name="language_option_dialog">tes 2</string>
+    <string name="language_title_dialog">Ganti Bahasa</string>
+    <string name="language_option_dialog">Yakin mau ganti bahasa?</string>
     <string name="txt_ok">Ok</string>
     <string name="txt_Cancel">Cancel</string>
+
+    <string name="login_tit_dialog">Login Berhasil</string>
+    <string name="login_con_dialog">Selamat memakai aplikasi kami :)</string>
+
+    <string name="login_tit_dialogerr">Login Gagal</string>
+    <string name="login_con_dialogerr">Coba cek lagi Email &amp; Password kamu yaa!!!</string>
 
     <string name="judul_lukisan">Nama Lukisan</string>
     <string name="nama_pelukis">Pelukis</string>
@@ -101,7 +114,7 @@
     <string name="logout_alert">Yakin ingin melakukan Logout?</string>
     <string name="logout_title">Keluar</string>
 
-    <string name="welcome">Selamat Datang Di Perpustakaan Seni!</string>
+    <string name="welcome">Selamat Datang Di ArtLibrary!</string>
 
     <string name="edit_profile_appbar">Edit Profile</string>
     <string name="edit_profile_username">Edit Profile</string>
@@ -112,6 +125,8 @@
 
     <string name="plus">+</string>
     <string name="minus">-</string>
+
+    <string name="resultscan_title">Hasil Scan</string>
 
 
 

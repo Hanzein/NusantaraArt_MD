@@ -18,19 +18,17 @@ class ResultScanActivity : AppCompatActivity() {
         binding = ActivityResultScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val era = intent.getStringExtra(ERA_KEY)
         val genre = intent.getStringExtra(GENRE_KEY)
         val style = intent.getStringExtra(STYLE_KEY)
         val image = intent.getStringExtra(IMAGE_KEY)
-        val era = intent.getStringExtra(ERA_KEY)
-
 
         setupAction()
 
         if (genre != null) {
+            binding.tvEra.text = era
             binding.tvItemStyle.text = style
             binding.tvItemGenre.text = genre
-            binding.tvItemEra.text = era
-
             Glide.with(binding.root.context)
                 .load(image)
                 .into(binding.image)

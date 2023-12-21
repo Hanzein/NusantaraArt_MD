@@ -24,13 +24,21 @@ class EditProfileActivity : AppCompatActivity() {
     }
     private fun setupAction() {
         binding.btnBackEditProfile.setOnClickListener {
-            // Animate the view with slide-out effect before finishing the activity
             binding.root.animate()
                 .translationX(1000f)
                 .setDuration(800)
                 .setInterpolator(AccelerateDecelerateInterpolator())
                 .withEndAction { finish() }
                 .start()
+        }
+        binding.buttonSubmitEdProfile.setOnClickListener {
+            val nama = binding.edEditName.text.toString()
+            val email = binding.edEmail.text.toString()
+            val nohp = binding.edNohp.text.toString()
+            val gender = binding.edGender.text.toString()
+            val alamat = binding.edAddress.text.toString()
+
+
         }
     }
 }

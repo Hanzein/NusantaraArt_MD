@@ -73,14 +73,28 @@
     <string name="btnback_map">Kembali</string>
 
 
-    <string name="tv_indonesia_language">Indonesia</string>
-    <string name="iv1_content_desc_language">Kembali ke profile</string>
-    <string name="btn1_content_desc_language">Ganti Bahasa Indonesia</string>
+    <string name="iv1_content_desc_language">Back to Profile</string>
+    <string name="btn1_content_desc_language">Change to Indonesian</string>
+    <string name="btn2_content_desc_language">Change to English</string>
+    <string name="btn3_content_desc_language">Change to Japanese</string>
+    <string name="btn4_content_desc_language">Change to Malaysia</string>
 
-    <string name="language_title_dialog">tes 1</string>
-    <string name="language_option_dialog">tes 2</string>
+    <string name="tv_indonesia_language">Indonesia</string>
+    <string name="tv_english_language">English</string>
+    <string name="tv_japan_language">Japan</string>
+    <string name="tv_malaysia_language">Malaysia</string>
+
+    <string name="language_title_dialog">Ganti Bahasa</string>
+    <string name="language_option_dialog">Yakin mau ganti bahasa?</string>
     <string name="txt_ok">Ok</string>
     <string name="txt_Cancel">Cancel</string>
+
+    <string name="login_tit_dialog">Login Berhasil</string>
+    <string name="login_con_dialog">Selamat memakai aplikasi kami :)</string>
+
+    <string name="login_tit_dialogerr">Login Gagal</string>
+    <string name="login_con_dialogerr">Coba cek lagi Email &amp; Password kamu yaa!!!</string>
+
 
 
     <string name="judul_lukisan">Nama Lukisan</string>
@@ -108,5 +122,7 @@
 
     <string name="plus">+</string>
     <string name="minus">-</string>
+
+    <string name="resultscan_title">Hasil Scan</string>
 
 </resources>

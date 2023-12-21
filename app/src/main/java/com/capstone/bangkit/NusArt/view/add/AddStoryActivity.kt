@@ -145,15 +145,14 @@ class AddStoryActivity : AppCompatActivity() {
                         is ResultState.Loading -> {
                             showLoading(true)
                         }
-
-
                         is ResultState.Success -> {
                             Log.d("Success", "Success")
                             showLoading(false)
 //                            showToast(result.data.message)
                             val intentDetail = Intent(this, ResultScanActivity::class.java)
-                            intentDetail.putExtra(ResultScanActivity.GENRE_KEY, result.data.genre)
+                            intentDetail.putExtra(ResultScanActivity.ERA_KEY, result.data.era)
                             intentDetail.putExtra(ResultScanActivity.STYLE_KEY, result.data.style)
+                            intentDetail.putExtra(ResultScanActivity.GENRE_KEY, result.data.genre)
                             intentDetail.putExtra(ResultScanActivity.IMAGE_KEY, result.data.image)
 
                             startActivity(intentDetail)

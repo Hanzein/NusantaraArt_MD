@@ -7,8 +7,9 @@ data class FileUploadResponse(
 //    val error: Boolean,
 //    @field:SerializedName("message")
 //    val message: String
+    val era: String,
     val style: String,
     val genre: String,
-    val image: String,
-    val era: String
+    val image: String
+
 )

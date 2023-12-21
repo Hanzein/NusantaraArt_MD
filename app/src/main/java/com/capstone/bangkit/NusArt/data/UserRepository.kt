@@ -128,10 +128,10 @@ class UserRepository private constructor(
             val userModel = getSession().first()
             val token = userModel.token
             val successResponse = FileUploadResponse(
+                "Abad ke 16",
                 "Realisme",
-                "Coba Genre",
+                "Sejarah",
                 "https://i1.wp.com/lsfdiscourse.org/wp-content/uploads/2020/04/web-realisme-estetika.jpg?fit=1366%2C768&ssl=1",
-                "Abad ke-16"
             )
 //            val successResponse =
 //                ApiConfig.getApiService(token).uploadImage(multipartBody)
