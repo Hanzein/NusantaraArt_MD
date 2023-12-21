@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/message_login_page"
+        android:text="@string/message_signup_page"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
