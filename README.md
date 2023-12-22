@@ -26,6 +26,7 @@ You can use this methods below to get and use the application build below:
 Clone this repository with using HTTPS:
 
 HTTPS: Use Git or SVN checkout by making use of this URL: https://github.com/Hanzein/NusantaraArt_MD.git
+
 `git clone https://github.com/Hanzein/NusantaraArt_MD.git`
 
 2. By using Android Studio or any other Android software development IDE(s)
