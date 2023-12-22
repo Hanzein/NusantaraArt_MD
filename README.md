@@ -24,10 +24,9 @@ C. Library
 You can choose to use one of two methods below to get and use the application build below:
 
 Clone this repository with using one of two methods:
-[Hash Sign(#)][Space]Any Header/subtitle or any text you want starting with hash
-[Tab][Tab]Your text
 
-git clone https://github.com/lonard2/CAMerlang.git
+[Hash Sign(#)][Space]tes
+[Tab][Tab] git clone https://github.com/Hanzein/NusantaraArt_MD.git
 
 HTTPS: Use Git or SVN checkout by making use of this URL: https://github.com/lonard2/CAMerlang.git
 
