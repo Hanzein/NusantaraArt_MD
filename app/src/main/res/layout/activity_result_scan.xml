@@ -13,7 +13,7 @@
         <View
             android:id="@+id/background"
             android:layout_width="match_parent"
-            android:layout_height="380dp"
+            android:layout_height="330dp"
             android:background="@drawable/bg_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,19 +42,6 @@
             app:layout_constraintStart_toEndOf="@+id/btn_back_detail"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/image"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:layout_margin="55dp"
-            android:adjustViewBounds="true"
-            android:paddingHorizontal="12dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/txt_edit_profile_appbar"
-            app:shapeAppearanceOverlay="@style/roundedImageView"
-            tools:src="@tools:sample/backgrounds/scenic" />
 
         <TextView
             android:id="@+id/item_era"
@@ -63,19 +50,21 @@
             android:textStyle="bold"
             android:text="Era"
             android:fontFamily="@font/font4_comic"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="30dp"
             android:scaleType="centerCrop"
+            android:textColor="@color/black"
             android:layout_marginStart="44dp"
             android:layout_marginHorizontal="16dp"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/image" />
+            app:layout_constraintTop_toBottomOf="@id/txt_edit_profile_appbar" />
 
         <TextView
             android:id="@+id/tv_item_era"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="era"
+            android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@+id/item_era"
             android:layout_marginStart="44dp"
             android:layout_marginHorizontal="16dp"
@@ -87,6 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_marginVertical="16dp"
             android:layout_marginHorizontal="16dp"
             android:text="Style"
@@ -102,6 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="style"
+            android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@+id/item_style"
             android:layout_marginStart="44dp"
             android:layout_marginHorizontal="16dp"
@@ -115,6 +106,7 @@
             android:fontFamily="@font/font4_comic"
             android:textStyle="bold"
             android:text="Genre"
+            android:textColor="@color/black"
             android:layout_marginStart="44dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="16dp"
@@ -128,6 +120,7 @@
             android:layout_height="wrap_content"
             android:text="genre"
             android:textSize="15sp"
+            android:textColor="@color/black"
             android:paddingEnd="12dp"
             android:layout_marginStart="44dp"
             android:layout_marginHorizontal="16dp"

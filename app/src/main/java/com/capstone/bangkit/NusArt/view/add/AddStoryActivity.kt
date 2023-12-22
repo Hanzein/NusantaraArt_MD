@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import com.capstone.bangkit.NusArt.R
-import com.capstone.bangkit.NusArt.adapter.StoryAdapter
 import com.capstone.bangkit.NusArt.data.ResultState
 import com.capstone.bangkit.NusArt.databinding.ActivityAddStoryBinding
 import com.capstone.bangkit.NusArt.view.ResultScanActivity
@@ -90,11 +89,6 @@ class AddStoryActivity : AppCompatActivity() {
         }
     }
 
-//    private fun startCamera() {
-//        currentImageUri = getImageUri(this)
-//        launcherIntentCamera.launch(currentImageUri)
-//    }
-
     private fun startCameraX() {
         val intent = Intent(this, CameraActivity::class.java)
         launcherIntentCameraX.launch(intent)
@@ -135,8 +129,6 @@ class AddStoryActivity : AppCompatActivity() {
         currentImageUri?.let { uri ->
             val imageFile = uriToFile(uri, this).reduceFileImage()
             Log.d("Image File", "showImage: ${imageFile.path}")
-            //val description = binding.description.text.toString()
-
             showLoading(true)
 
             viewModel.uploadImage(imageFile).observe(this) { result ->
@@ -145,16 +137,14 @@ class AddStoryActivity : AppCompatActivity() {
                         is ResultState.Loading -> {
                             showLoading(true)
                         }
+
                         is ResultState.Success -> {
                             Log.d("Success", "Success")
                             showLoading(false)
-//                            showToast(result.data.message)
                             val intentDetail = Intent(this, ResultScanActivity::class.java)
                             intentDetail.putExtra(ResultScanActivity.ERA_KEY, result.data.era)
                             intentDetail.putExtra(ResultScanActivity.STYLE_KEY, result.data.style)
                             intentDetail.putExtra(ResultScanActivity.GENRE_KEY, result.data.genre)
-//                            intentDetail.putExtra(ResultScanActivity.IMAGE_KEY, result.data.image)
-
                             startActivity(intentDetail)
                         }
 
@@ -186,7 +176,6 @@ class AddStoryActivity : AppCompatActivity() {
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
-
 
 
     companion object {

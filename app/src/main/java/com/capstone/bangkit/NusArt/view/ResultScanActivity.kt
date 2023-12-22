@@ -21,8 +21,6 @@ class ResultScanActivity : AppCompatActivity() {
         val era = intent.getStringExtra(ERA_KEY)
         val genre = intent.getStringExtra(GENRE_KEY)
         val style = intent.getStringExtra(STYLE_KEY)
-//        val image = intent.getStringExtra(IMAGE_KEY)
-
         setupAction()
 
         if (genre != null) {
@@ -43,7 +41,6 @@ class ResultScanActivity : AppCompatActivity() {
 
     companion object {
         const val GENRE_KEY = "genre_scan"
-//        const val IMAGE_KEY = "image_scan"
         const val STYLE_KEY = "style"
         const val ERA_KEY = "era"
 

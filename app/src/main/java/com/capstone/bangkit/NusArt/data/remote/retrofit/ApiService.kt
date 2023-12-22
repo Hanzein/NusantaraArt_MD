@@ -34,10 +34,6 @@ interface ApiService {
         @Part file: MultipartBody.Part,
     ): PredictData
 
-//    @GET("arts")
-//    suspend fun getStoriesWithLocation(
-//        @Query("location") location : Int = 1,
-//    ): ArtResponse
 
     @GET("arts")
     suspend fun getArts(
