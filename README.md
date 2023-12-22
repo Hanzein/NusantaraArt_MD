@@ -21,14 +21,12 @@ C. Library
 - Google Maps Services
 
 ## How to install and get started with the repository : 
-You can choose to use one of two methods below to get and use the application build below:
+You can use this methods below to get and use the application build below:
 
-Clone this repository with using one of two methods:
+Clone this repository with using HTTPS:
 
-[Hash Sign(#)][Space]tes
-[Tab][Tab] git clone https://github.com/Hanzein/NusantaraArt_MD.git
-
-HTTPS: Use Git or SVN checkout by making use of this URL: https://github.com/lonard2/CAMerlang.git
+HTTPS: Use Git or SVN checkout by making use of this URL: https://github.com/Hanzein/NusantaraArt_MD.git
+`git clone https://github.com/Hanzein/NusantaraArt_MD.git`
 
 2. By using Android Studio or any other Android software development IDE(s)
 - Enable a version control integration in a project, for example in the Android Studio:
