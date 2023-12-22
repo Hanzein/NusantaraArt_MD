@@ -10,11 +10,12 @@ import com.capstone.bangkit.NusArt.data.pref.UserModel
 import com.capstone.bangkit.NusArt.data.pref.UserPreference
 import com.capstone.bangkit.NusArt.data.remote.response.ArtResponse
 import com.capstone.bangkit.NusArt.data.remote.response.AuthRequest
-import com.capstone.bangkit.NusArt.data.remote.response.FileUploadResponse
+import com.capstone.bangkit.NusArt.data.remote.response.PredictData
 import com.capstone.bangkit.NusArt.data.remote.response.ListArtItem
 import com.capstone.bangkit.NusArt.data.remote.response.LoginResponse
 import com.capstone.bangkit.NusArt.data.remote.response.RegisterResponse
 import com.capstone.bangkit.NusArt.data.remote.retrofit.ApiConfig
+import com.dicoding.picodiploma.storyapp.data.remote.retrofit.ApiML
 import com.dicoding.picodiploma.storyapp.data.remote.retrofit.ApiService
 import com.google.gson.Gson
 import kotlinx.coroutines.flow.Flow
@@ -30,7 +31,10 @@ class UserRepository private constructor(
 
     private val apiService: ApiService,
 
-    private val userPreference: UserPreference
+    private val userPreference: UserPreference,
+
+    private val apiML: ApiML
+
 ) {
 
     suspend fun saveSession(user: UserModel) {
@@ -120,22 +124,14 @@ class UserRepository private constructor(
         //val requestBody = description.toRequestBody("text/plain".toMediaType())
         val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
         val multipartBody = MultipartBody.Part.createFormData(
-            "photo",
+            "file",
             imageFile.name,
             requestImageFile
         )
         try {
-            val userModel = getSession().first()
-            val token = userModel.token
-            val successResponse = FileUploadResponse(
-                "Abad ke 16",
-                "Realisme",
-                "Sejarah",
-                "https://i1.wp.com/lsfdiscourse.org/wp-content/uploads/2020/04/web-realisme-estetika.jpg?fit=1366%2C768&ssl=1",
-            )
-//            val successResponse =
-//                ApiConfig.getApiService(token).uploadImage(multipartBody)
-            emit(ResultState.Success(successResponse))
+            val successResponse =
+               apiML.uploadImage(multipartBody)
+            emit(ResultState.Success(successResponse.data[0]))
         } catch (e: HttpException) {
             emit(ResultState.Error(e.localizedMessage))
         }
@@ -151,10 +147,11 @@ class UserRepository private constructor(
         private var instance: UserRepository? = null
         fun getInstance(
             apiService: ApiService,
-            userPreference: UserPreference
+            userPreference: UserPreference,
+            apiML:ApiML
         ): UserRepository =
             instance ?: synchronized(this) {
-                instance ?: UserRepository(apiService, userPreference)
+                instance ?: UserRepository(apiService, userPreference, apiML)
             }.also { instance = it }
     }
 }

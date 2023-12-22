@@ -1,5 +1,6 @@
 package com.capstone.bangkit.NusArt.data.remote.retrofit
 
+import com.dicoding.picodiploma.storyapp.data.remote.retrofit.ApiML
 import com.dicoding.picodiploma.storyapp.data.remote.retrofit.ApiService
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -23,10 +24,24 @@ object ApiConfig {
                 .addInterceptor(loggingInterceptor)
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://capstone-nusart.et.r.appspot.com")
+                .baseUrl("https://capstone-nusart.et.r.appspot.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
             return retrofit.create(ApiService::class.java)
         }
+
+    fun getApiML(): ApiML {
+        val loggingInterceptor =
+            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+        val client = OkHttpClient.Builder()
+            .addInterceptor(loggingInterceptor)
+            .build()
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://ml-service-aijk65ajnq-et.a.run.app/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(client)
+            .build()
+        return retrofit.create(ApiML::class.java)
+    }
     }

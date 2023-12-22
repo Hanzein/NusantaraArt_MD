@@ -153,7 +153,7 @@ class AddStoryActivity : AppCompatActivity() {
                             intentDetail.putExtra(ResultScanActivity.ERA_KEY, result.data.era)
                             intentDetail.putExtra(ResultScanActivity.STYLE_KEY, result.data.style)
                             intentDetail.putExtra(ResultScanActivity.GENRE_KEY, result.data.genre)
-                            intentDetail.putExtra(ResultScanActivity.IMAGE_KEY, result.data.image)
+//                            intentDetail.putExtra(ResultScanActivity.IMAGE_KEY, result.data.image)
 
                             startActivity(intentDetail)
                         }
