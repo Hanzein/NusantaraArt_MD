@@ -31,8 +31,8 @@ HTTPS: Use Git or SVN checkout by making use of this URL: https://github.com/Han
 
 2. By using Android Studio or any other Android software development IDE(s)
 - Enable a version control integration in a project, for example in the Android Studio:
-   -- By selecting VCS -> Enable Version Control Integration in your Android Studio menubar.
-   -- Check if the version control system (VCS) associated to the project is Git. If you are already set to another VCS, set it in the Settings -> Version Control.
+   * By selecting VCS -> Enable Version Control Integration in your Android Studio menubar.
+   * Check if the version control system (VCS) associated to the project is Git. If you are already set to another VCS, set it in the Settings -> Version Control.
 - Set a new remote in Git -> Manage Remotes and pressing the 'plus' icon. Set it to the HTTPS link.
 - Pull the project files to retrieve all files from this repository (if needed)
 - Rebuild or clean the project files.
